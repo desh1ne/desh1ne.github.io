@@ -12,18 +12,20 @@
             <h1>Ксения Смирнова - Психолог</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">Обо мне</a></li>
-                    <li><a href="#services">Услуги</a></li>
-                    <li><a href="#contact">Контакты</a></li>
+                    <li><button onclick="showSections('about', 'services')">Обо мне</button></li>
+                    <li><button onclick="showSections('services', 'contact')">Услуги</button></li>
+                    <li><button onclick="showSections('contact', 'about')">Контакты</button></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section id="about" class="container">
-        <h2>Обо мне</h2>
-        <p>Я профессиональный психолог с более чем 5-летним опытом. Моя специализация — когнитивно-поведенческая терапия.</p>
+    <section id="about" class="container section">
+    <h2>Обо мне</h2>
+    <p>Меня зовут Анна Смирнова, и я сертифицированный психолог с более чем 15-летним опытом. В своей практике я использую разнообразные методы, включая когнитивно-поведенческую терапию, что помогает моим клиентам эффективно справляться с личными кризисами и улучшать качество жизни.</p>
+    <p>Я верю, что психология — это искусство и наука помогать людям обретать гармонию внутри себя и во взаимодействиях с окружающим миром. Мой подход к каждому клиенту индивидуален, ведь уникальный опыт каждого из нас требует особого внимания и тонкости в работе.</p>
+    <p>Среди моих клиентов — люди, столкнувшиеся с трудностями в личной жизни, переживающие стресс на работе или испытывающие сложности в общении с близкими. Я помогаю им восстановить эмоциональное равновесие, научиться управлять своими чувствами и эффективно решать возникающие проблемы.</p>
     </section>
-    <section id="services" class="container">
+    <section id="services" class="container section">
         <h2>Услуги</h2>
         <ul>
             <li>Индивидуальные консультации</li>
@@ -31,10 +33,10 @@
             <li>Групповые сессии</li>
         </ul>
     </section>
-    <section id="contact" class="container">
+    <section id="contact" class="container section">
         <h2>Контакты</h2>
         <p>Телефон: +7 999 123 45 67</p>
-        <p>Email: anna.psy@example.com</p>
+        <p>Email: ksy.psy@example.com</p>
         <form>
             <input type="text" placeholder="Ваше имя" required>
             <input type="email" placeholder="Ваш email" required>
@@ -47,5 +49,6 @@
             <p>© 2024 Ксения Смирнова. Все права защищены.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

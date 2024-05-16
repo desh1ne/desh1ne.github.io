@@ -17,33 +17,22 @@ nav ul li {
     display: inline;
     margin-right: 10px;
 }
-nav ul li a {
+nav ul li button {
     color: white;
-    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
 }
 .container {
     width: 80%;
     margin: 20px auto;
     text-align: center;
+    display: none; /* Изначально все секции скрыты */
 }
 footer {
     background: #333;
     color: white;
     text-align: center;
     padding: 10px 20px;
-}
-form {
-    margin-top: 20px;
-}
-input, textarea {
-    margin-top: 10px;
-    padding: 10px;
-    width: calc(100% - 22px);
-}
-button {
-    padding: 10px 20px;
-    background-color: #005a87;
-    color: white;
-    border: none;
-    cursor: pointer;
 }
