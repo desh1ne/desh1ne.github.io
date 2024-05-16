@@ -1,9 +1,9 @@
-<script>
-document.querySelector('form').addEventListener('submit', function(event) {
-    var name = document.querySelector('input[name="name"]').value;
-    if(name.length < 3) {
-        alert('Имя должно быть длиннее 2 символов');
-        event.preventDefault();
-    }
-});
-</script>
+function showSections(firstSectionId, secondSectionId) {
+    var sections = document.querySelectorAll('.section');
+    sections.forEach(section => {
+        section.style.display = 'none'; // Скрыть все секции
+    });
+    document.getElementById(firstSectionId).style.display = 'block'; // Показать первую секцию
+    document.getElementById(secondSectionId).style.display = 'block'; // Показать вторую секцию
+}
+
